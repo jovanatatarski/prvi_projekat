@@ -1,0 +1,373 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{   
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.navbar ul li{
+    display: inline;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: 25px;
+    color: white;
+    transition: 0.3s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.hero{
+    background-image: url('pancakes.jpg');
+    background-size: cover;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1{
+    color: white;
+    text-align: center;
+    width: 50%;
+    font-size:55px;
+    background-color: rgb(237, 137, 66);
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+#ghost{
+    position: absolute; top: 60vh; left: 44vw;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: 0.3s ease;
+    animation-name: hero;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+#ghost:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/*recepti*/
+
+.cont{
+    padding: 20px;
+    padding-top: 110px;
+    padding-bottom: 40px;
+}
+.card{
+    display: inline;
+}
+img{
+    width: 35%;
+    height: 32%;
+}
+#one:hover{
+    background-color: beige;
+    opacity: 20%;
+}
+#two:hover{
+    background-color: beige;
+    opacity: 20%;
+}
+#three:hover{
+    background-color: beige;
+    opacity: 20%;
+}
+#four:hover{
+    background-color: beige;
+    opacity: 20%;
+}
+.photo{
+    margin-left: 260px;
+} 
+.photo:hover{
+    animation-name: animacija;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.two{
+    margin-left: 50px;
+}
+.slika{
+    margin-bottom: 50px;
+}
+.kontejner{
+    width: 100%;
+}
+#prva{
+    width: 40%;
+    margin: 0px 50px 50px 20px;
+    float: left;
+}
+.text1{
+    margin-top: 50px;
+    padding: 10px;
+    margin-right: 20px;
+}
+.text1 p{
+    text-align: justify;
+}
+.unordered{
+    list-style: none;
+}
+.text2{
+    clear: both;
+    float: left;
+    margin: 10px 20px 50px 40px;
+    width: 55%;
+}
+.text2 p{
+    text-align: justify ;
+}
+#druga{
+    float: right;
+    margin: 0px 20px 50px 20px;
+    width: 750px;
+}
+#treca{
+    clear: both;
+    float: left;
+    width: 40%;
+    margin: 0px 20px 50px 20px;
+}
+.text3{
+    float: right;
+    width: 55%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+li{
+    margin-left: -40px;
+}
+.text4{
+    clear: both;
+    float: left;
+    width: 60%;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: justify;
+}
+#cetvrta{
+    float: right;
+    margin: 0px 20px 50px 0px;
+}
+.footer{
+    clear: both;
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    color: white;
+    font-size: 20px;
+}
+
+/*kontakt*/
+
+.kontakt_stranica{
+    margin-top: 150px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+}
+.kontakt{
+    width: 55%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-color: #fcba03;
+    border-radius: 30px;
+    float: left;
+}
+aside{
+    float: right;
+    width: 30%;
+    background-color: #fca103;
+    border-radius: 30px;
+    margin-right: 50px;
+    padding: 20px 20px 20px 50px;
+}
+form p{
+    font-size: 25px;
+    margin: 25px 0px 0px 0px;
+}
+input{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 450px;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+input:hover{
+    border: 1px solid orange;
+}
+textarea{
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px 20px 20px 0;
+}
+textarea:hover{
+    border: 1px solid orange;
+}
+button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: block;
+    margin: 20px 0 20px 340px;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .navbar{
+        height:220px;
+        justify-content: left;
+    }
+    .navbar ul li {
+        display: block;
+        margin: 20px 5px;
+    }
+    .navbar ul li a{
+        width: 100%;
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+    #ghost{
+        top: 68vh;
+        left: 34vw;
+        animation: none;
+    }
+    .kontakt_stranica{
+        margin-top: 280px;
+    }
+    .kontakt{
+        float: none;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    aside{
+        float: none;
+        width: 100%;
+        margin: 50px 0px 50px 0px;
+        border-radius: 0;
+        padding-left: 150px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:380px){
+    .navbar{
+        height:230px;
+        justify-content: left;
+    }
+    .navbar ul li {
+        display: block;
+        margin: 20px 0px 20px -10px;
+    }
+    .navbar ul li a{
+        width: 100%;
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+    .hero h1{
+        width: 100%;
+        background-color: transparent;
+        color: black;
+    }
+    #ghost{
+        top: 66vh; left: 5vw;
+        animation: none;
+        width: 70%;
+        height: 50px;
+        margin-left: 15px;
+        padding-right: 0px;
+        padding-left: 35px;
+    }
+    .kontakt_stranica{
+        margin-top: 250px;
+    }
+    .kontakt{
+        float: none;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    form p{
+        margin-left: 40px;
+    }
+    input{
+        width: 250px;
+        margin-left: 30px;
+    }
+    textarea{
+        width: 250px;
+        margin-left: 30px;
+    }
+    button{
+        margin: 20px 0px 20px 100px;
+    }
+    aside{
+        float: none;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+}
+@keyframes animacija{
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(0.7);
+    }
+}
+@keyframes hero{
+    0%{
+        left: 700px;
+    }
+    60%{
+        left: 1000px;
+    }
+    100%{
+        left: 845px;
+    }
+}
